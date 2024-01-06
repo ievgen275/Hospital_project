@@ -1,3 +1,4 @@
+// This efect button anonim
 let buttons = document.getElementsByClassName('button_anonim'),
     forEach = Array.prototype.forEach;
 
@@ -5,7 +6,6 @@ forEach.call(buttons, function(b) {
    b.addEventListener('click', addElement);
 });
 
-// This efect button anonim
 function addElement(e) {
    let addDiv = document.createElement('div'),
        mValue = Math.max(this.clientWidth, this.clientHeight),
@@ -20,4 +20,6 @@ function addElement(e) {
    addDiv.classList.add('pulse')
    this.appendChild(addDiv);
 }
+
+// This flyers efect
 

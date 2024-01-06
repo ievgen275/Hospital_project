@@ -137,7 +137,7 @@ body {
    width: auto;
 }
 
-.title_btn {
+.title_link {
    text-decoration: none;
 }
 
@@ -177,7 +177,51 @@ body {
 @keyframes pulse {
    to {
       transform: scale(2);
-      background-color: #4CAF8A;
+      background-color: #fff;
       opacity: 0;
    }
+}
+
+/* Flyers */
+.flyer_1 {
+   border-radius: 25px;
+   background: #E50050;
+   box-shadow: 0px 4px 6px 0px #E50050;
+   
+   width: 180px;
+   height: 120px;
+
+   position: relative;
+   margin-top: 40px;
+   margin-left: 0px;
+
+   display: flex;
+   justify-content: center;
+
+   color: #FFF;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+
+.flyer_1:hover {
+	animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
 }
