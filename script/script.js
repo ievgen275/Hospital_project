@@ -1,6 +1,6 @@
-// This efect button anonim
 let buttons_anonim = document.getElementsByClassName('button_anonim'),
     buttons_news = document.getElementsByClassName('button_news'),
+    buttons_admin = document.getElementsByClassName('button_admin'),
     flyers = document.getElementsByClassName('flyer_styles'),
     forEach = Array.prototype.forEach;
 
@@ -14,6 +14,10 @@ forEach.call(buttons_news, function(b) {
 
 forEach.call(flyers, function(b) {
     b.addEventListener('click', addElement);
+});
+
+forEach.call(buttons_admin, function(b) {
+   b.addEventListener('click', addElement);
 });
 
 function addElement(e) {

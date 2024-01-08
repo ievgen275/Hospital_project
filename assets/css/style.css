@@ -3,6 +3,10 @@ body {
    margin: 0;
 }
 
+a {
+   text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
@@ -50,7 +54,6 @@ body {
    color: #000;
    font-size: 12px;
    font-weight: 600;
-   text-decoration: none;
    
    transition: color .2s linear;
    position: relative;
@@ -83,7 +86,8 @@ body {
 }
 
 /* Intro */
-.background {
+.background,
+.background_admin {
    display: flex;
    position: absolute;
    top: 0;
@@ -97,7 +101,8 @@ body {
    z-index: -1;
 }
 
-.background_img {
+.background_img,
+.background_admin_img {
    display: flex;
    position: absolute;
    top: 0;
@@ -135,10 +140,6 @@ body {
 
    height: 480px;
    width: auto;
-}
-
-.title_link {
-   text-decoration: none;
 }
 
 .button_anonim {
@@ -271,6 +272,14 @@ body {
    border-radius: 25px;
    background: #FFF;
    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+}
+
+.block_1:hover {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .block_2 {
@@ -282,6 +291,14 @@ body {
    border-radius: 25px;
    background: #FFF;
    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+}
+
+.block_2:hover {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
 }
 
 .block_img {
@@ -377,4 +394,55 @@ body {
    margin: -33px auto;
 
    z-index: 0;
+}
+
+/* Admin */
+.background_admin {
+   margin-top: 1000px;
+   background: rgba(76, 175, 138, 0.83);
+}
+
+.background_admin_img {
+   margin-top: 1000px;
+}
+
+.title_admin {
+   position: relative;
+   margin-top: 200px;
+
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+}
+
+.subtitle_admin {
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 20px;
+}
+
+.button_admin {
+   position: relative;
+   margin-top: 60px;
+
+   width: 350px;
+   height: 50px;
+
+   border-radius: 40px;
+   background: #E50050;
+   box-shadow: 0px 0px 4px 2px rgba(229, 0, 80, 0.52);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: #fff;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+
+   overflow: hidden;
 }
