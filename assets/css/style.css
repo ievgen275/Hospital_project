@@ -19,6 +19,10 @@ a {
    margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+   width: 0;
+}
+
 /* Header */
 .header {
    display: flex;
@@ -231,7 +235,8 @@ a {
 }
 
 /* News */
-.news_section {
+.news_section,
+.contact_section {
    border-radius: 15px;
    background: #FFF;
    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
@@ -241,8 +246,6 @@ a {
 
    position:absolute;
    margin-top: 480px;
-
-   
 }
 
 .title_news {
@@ -399,11 +402,13 @@ a {
 /* Admin */
 .background_admin {
    margin-top: 1000px;
+   height: 700px;
    background: rgba(76, 175, 138, 0.83);
 }
 
 .background_admin_img {
    margin-top: 1000px;
+   height: 700px;
 }
 
 .title_admin {
@@ -445,4 +450,50 @@ a {
    line-height: normal;
 
    overflow: hidden;
+}
+
+.doctor_admin {
+   width: 300px;
+   height: auto;
+   flex-shrink: 0;
+
+   border-radius: 19px;
+   background: lightgray 50% / cover no-repeat;
+}
+
+.doctor_admin_1 {
+   position: absolute;
+   margin-left: 800px;
+   margin-top: -350px;
+}
+
+.doctor_admin_2 {
+   position: absolute;
+   margin-left: 1000px;
+   margin-top: -100px;
+   z-index: -1;
+}
+
+.doctor_admin_3 {
+   position: absolute;
+   margin-left: 600px;
+   margin-top: -100px;
+   z-index: -1;
+}
+
+/* Contact */
+.contact_section {
+   position:absolute;
+   margin-top: 1600px;
+}
+
+.title_contact {
+   color: #000;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+
+   position: relative;
+   margin: 30px 520px;
 }
