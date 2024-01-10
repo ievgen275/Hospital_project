@@ -3,8 +3,10 @@ body {
    margin: 0;
 }
 
-a {
+a,
+p {
    text-decoration: none;
+   margin: 0;
 }
 
 *,
@@ -189,18 +191,24 @@ a {
 
 /* Flyers */
 .flyer_1 {
+   padding-top: 20px;
+
    position: relative;
    margin-top: 40px;
    margin-left: 0px;
 }
 
 .flyer_2 {
+   padding-top: 20px;
+
    position: relative;
    margin-top: -120px;
    margin-left: 200px;
 }
 
 .flyer_3 {
+   padding-top: 20px;
+
    position: relative;
    margin-top: -120px;
    margin-left: 400px;
@@ -255,19 +263,21 @@ a {
    font-weight: 600;
    line-height: normal;
 
-   margin-top: 60px;
+   margin-top: 50px;
+   position: relative;
 }
 
 .pulse_img {
-   position: absolute;
+   position: relative;
    margin-left: 280px;
-   margin-top: -94px;
+   margin-top: -80px;
 
    width: 130px;
    height: auto;
 }
 
 .block_1 {
+   margin-top: 30px;
    margin-left: 60px;
 
    width: 500px;
@@ -496,4 +506,83 @@ a {
 
    position: relative;
    margin: 30px 520px;
+}
+
+.block_contact_center {
+   margin: 0 auto;
+
+   width: 360px;
+   height: 150px;
+
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+   padding-top: 5px;
+   padding-left: 30px;
+}
+
+.title_in_block {
+   color: #4CAF8A;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+
+   margin-top: 10px;
+}
+
+.block_contact_left {
+   margin-top: -150px;
+   float: left;
+
+   width: 360px;
+   height: 150px;
+
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+   padding-top: 5px;
+   padding-left: 30px;
+}
+
+.subtitle_block_left {
+   margin-top: 10px;
+
+   color: #000;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+}
+
+.block_contact_right {
+   margin-top: -150px;
+   float: right;
+
+   width: 360px;
+   height: 150px;
+
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+   padding-top: 5px;
+   padding-left: 30px;
+}
+
+.block_contact_bottom {
+   margin: 50px auto;
+
+   width: 100%;
+   height: 150px;
+
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_for_block {
+   max-width: 1000px;
 }
