@@ -765,12 +765,6 @@ p {
 }
 
 /* Table */
-/* thead th,
-tfoot th,
-tfoot td {
-   border: 3px solid rgba(76, 175, 138, 0.83);
-} */
-
 .table {
    margin-top: 35px;
 
@@ -780,7 +774,28 @@ tfoot td {
    border-radius: 0 0 30px 30px;
    background: #FFF;
    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.25);
+
+   border-collapse: collapse;
 }
+
+/* Border */
+td,
+th {
+   border: 2px solid rgba(76, 175, 138, 0.83);
+   padding: 5px;
+}
+
+th:last-child {
+   border-bottom: none;
+   border-right: none;
+}
+
+th:first-child {
+   border-bottom: none;
+   border-left: none;
+}
+
+
 
 thead th:nth-child(1) {
    width: 70%;
@@ -790,6 +805,12 @@ tbody th:nth-child(1) {
    position: relative;
    text-align: left;
    padding-left: 20px;
+
+   font-weight: 500;
+}
+
+tbody th:nth-child(2) {
+   font-weight: 500;
 }
 
 .caption {
