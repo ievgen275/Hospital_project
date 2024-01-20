@@ -851,12 +851,6 @@ tbody th:nth-child(2) {
    border: 0;
 }
 
-/* .button_list {
-   position: absolute;
-   margin: -25px 0 0 250px;
-   height: 30px;
-} */
-
 .search {
    display: flex;
    float: right;
@@ -871,12 +865,49 @@ tbody th:nth-child(2) {
 
    padding: 4px 0 4px 10px;
 
-   /* color: rgba(0, 0, 0, 0.41); */
    font-family: Montserrat;
    font-size: 18px;
    font-weight: 400;
 }
 
-.search_icon {
-   margin-right: 20px;
+.doctor_cart_img {
+   height: 290px;
+   border-radius: 20px 20px 0px 0px;
+
+   margin: 50px 0 0 0;
+}
+
+.table_in_cart {
+   position: relative;
+   margin-top: -50px;
+
+   height: 150px;
+   width: 290px;
+
+   padding: 20px 20px 0 20px;
+
+   border-radius: 20px;
+   background: #4DBA91;
+}
+
+.title_cart {
+   text-align: center;
+
+   color: #FFF;
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.subtitle_cart {
+   text-align: center;
+
+   color: #FFF;
+   font-weight: 400;
+   font-size: 15px;
+
+   margin-top: 10px;
+}
+
+.doctor_cart.hide {
+   display: none;
 }
