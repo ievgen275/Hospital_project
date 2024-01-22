@@ -1,9 +1,10 @@
 document.querySelector('.search').oninput = function () {
-   let val = this.value.trim();
-   let elementItems = document.querySelectorAll('.doctor_cart .title_cart')
-   if (val != '') {
-      elementItems.forEach(function (elem) {
-         if (elem.innerText.search(val) == -1) {
+   let valueInput = document.querySelector('.search').value.toLowerCase();
+   let doctors = document.querySelectorAll('.doctor_cart');
+
+   if (valueInput != '') {
+      doctors.forEach(function (elem) {
+         if (elem.innerText.search(valueInput) == -1) {
             elem.classList.add('hide');
          } else {
             elem.classList.remove('hide');
@@ -11,9 +12,3 @@ document.querySelector('.search').oninput = function () {
       });
    };
 };
-
-
-// document.querySelector('.search').oninput = function () {
-//    const val = this.target.value.trim();
-//    const
-// };
