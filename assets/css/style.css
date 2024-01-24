@@ -852,8 +852,7 @@ tbody th:nth-child(2) {
 }
 
 .search {
-   display: flex;
-   float: right;
+   margin-left: 40px;
 
    height: 30px;
    width: 900px;
@@ -868,6 +867,13 @@ tbody th:nth-child(2) {
    font-family: Montserrat;
    font-size: 18px;
    font-weight: 400;
+}
+
+.doctor_cart {
+   display: flex;
+   justify-content: center;
+   flex: 1 1 calc(25% - 20px);
+   box-sizing: border-box;
 }
 
 .doctor_cart_img {
