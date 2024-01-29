@@ -16,3 +16,25 @@ document.querySelector('.search').oninput = function () {
       });
    }
 };
+
+
+document.getElementById('list').addEventListener('change', function () {
+   var selectedValue = this.value;
+   var doctorsList = document.querySelectorAll('.doctor_cart');
+
+   if (selectedValue !== '0') {
+      doctorsList.forEach(function (doctor) {
+         var doctorType = doctor.getAttribute('data-type');
+
+         if (doctorType === selectedValue) {
+            doctor.classList.remove('hide');
+         } else {
+            doctor.classList.add('hide');
+         }
+      });
+   } else {
+      doctorsList.forEach(function (doctor) {
+         doctor.classList.remove('hide');
+      });
+   }
+});
