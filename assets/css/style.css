@@ -849,6 +849,30 @@ tbody th:nth-child(2) {
    font-weight: 400;
 
    border: 0;
+
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+
+   background-image: url('/assets/img/free-icon-down-arrow-2985150.png');
+   background-repeat: no-repeat, repeat;
+   background-position: right .7em top 50%, 0 0;
+   background-size: 20px auto, 100%;
+}
+
+#list::-ms-expand {
+   display: none;
+}
+
+#list:hover {
+   border-color: #888;
+   box-shadow: 0 0 1px 3px rgba(229, 0, 80, 0.52);
+}
+
+#list:focus {
+   border-color: #aaa;
+   color: #222;
+   outline: none;
 }
 
 .search {
@@ -867,6 +891,17 @@ tbody th:nth-child(2) {
    font-family: Montserrat;
    font-size: 18px;
    font-weight: 400;
+}
+
+.search:hover {
+   border-color: #888;
+   box-shadow: 0 0 1px 3px rgba(229, 0, 80, 0.52);
+}
+
+.search:focus {
+   border-color: #aaa;
+   color: #222;
+   outline: none;
 }
 
 .doctor_cart {
