@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="/hospital/assets/img/favicon-32x32.png">
+   <link rel="stylesheet" href="/hospital/assets/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+   <title>Лікарі</title>
+</head>
+
+<body>
+
+   <!-- Header -->
+   <header class="header">
+      <div class="container">
+         <div class="header_inner">
+            <a href="/hospital/pages/home_page/home_page.html"><img src="/hospital/assets/img/logo.svg" alt=""
+                  class="logo"></a>
+            <nav class="nav">
+               <a class="nav_link" href="/hospital/pages/paid_services/paid_services.html">Платні послуги</a>
+               <a class="nav_link" href="/hospital/pages/doctor/doctor.html">Лікарі</a>
+               <a class="nav_link" href="/hospital/pages/departmant/department.html">Відділення</a>
+               <a class="nav_link" href="/hospital/pages/work_schedule/work_schedule.html">Графік роботи</a>
+               <a class="nav_link" href="/hospital/pages/other/other.html">Інше</a>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <!-- Title -->
+   <div class="container">
+      <h1 class="general_title">Наші лікарі</h1>
+   </div>
+
+   <section class="container" style="display: flex; flex-wrap: wrap;">
+
+      <!-- List -->
+      <select name="type" id="list">
+         <option value="0">Оберіть відділення</option>
+         <option value="1">Кабінет Трансфузіології</option>
+         <option value="2">Реабілітаційне відділення</option>
+         <option value="3">Педіатричне відділення</option>
+         <option value="4">Діагностичне відділення</option>
+         <option value="5">Клініко-діагностична лабораторія</option>
+         <option value="6">Стоматологічне відділення</option>
+         <option value="7">Дитяча консультація з денним стаціонаром</option>
+         <option value="8">Відділення медичних оглядів</option>
+         <option value="9">Поліклінічне відділення</option>
+         <option value="10">Травматологічне відділення</option>
+         <option value="11">Урологічне відділення</option>
+         <option value="12">Терапевтичне відділення</option>
+         <option value="13">Неврологічне відділення з інсультним блоком</option>
+         <option value="14">Педіатричне відділення</option>
+         <option value="15">Хірургічне відділення з операційним блоком</option>
+         <option value="16">Відділення анестезіології та інтенсивної терапії</option>
+         <option value="17">Відділення невідкладної (екстреної) медичної допомоги</option>
+      </select>
+
+      <!-- Search -->
+      <input type="text" class="search" placeholder="Пошук лікаря">
+
+      <!-- Doctor cart -->
+
+      <div class="doctor_cart" data-type="3">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_73-e1655202226994.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Піцько Василь Богданович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="3">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Кривецька Мар'яна Ярославівна</p>
+               <p class="subtitle_cart">лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_37.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Козак Богдана Володимирівна</p>
+               <p class="subtitle_cart">біолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_19-e1655203014239.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Тимчій Марія Єдуардівна</p>
+               <p class="subtitle_cart">лікар-стоматолог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Бардиш Мирон Михайлович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_55-e1655200958731.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Моргун Геннадій Трохимович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_18.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Бурбулевич Галина Ярославівна</p>
+               <p class="subtitle_cart">лікар-стоматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Чучвага Христина Олександрівна</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_36.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Ковальський Петро Сафронович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_44.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Винник Надія Богданівна</p>
+               <p class="subtitle_cart">лікар-лаборант з клінічної діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="2">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_69.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Грибик Христина Степанівна</p>
+               <p class="subtitle_cart">завідувач відділення, лікар - невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Сидорик Іван Ігорович</p>
+               <p class="subtitle_cart">лікар-стоматолог-ортопед</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7299_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Сташко Ірина Зенонівна</p>
+               <p class="subtitle_cart">лікар-ендокринолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7348_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мачалаба Ярина Степанівна</p>
+               <p class="subtitle_cart">лікар-офтальмолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_22.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гаркот Орест Васильович</p>
+               <p class="subtitle_cart">лікар-стоматолог-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_08-e1655201654295.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Проценко Юрій Миколайович</p>
+               <p class="subtitle_cart">лікар-отоларинголог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_30.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Буній Мар'яна Василівна</p>
+               <p class="subtitle_cart">лікар з медицини невідкладних станів</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Штик Олександр Васильович</p>
+               <p class="subtitle_cart">лікар-акушер-гінеколог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="11">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_49.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Жирун Юрій Васильович</p>
+               <p class="subtitle_cart">лікар-уролог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Довган Людмила Осипівна</p>
+               <p class="subtitle_cart">лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="10">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_25-e1655203275313.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Шпитун Дмитро Романович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_43-e1655203212996.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Шуманський Ростислав Богданович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="8">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_64.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Годлик Ярослава Миколаївна</p>
+               <p class="subtitle_cart">лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_45-e1655202600796.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Курилець Олена Володимирівна</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_41.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Бандера Галина Юрієвна</p>
+               <p class="subtitle_cart">лікар-бактеріолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Подолянчук Наталія Ігорівна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_70-e1655201229312.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Лудин Василь Іванович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_01-e1655202699856.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мельник Олег Артемович</p>
+               <p class="subtitle_cart">лікар-онколог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Уграк Мирослав Васильович</p>
+               <p class="subtitle_cart">лікар-стоматолог-ортопед</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мажак Ярослава Василівна</p>
+               <p class="subtitle_cart">лікар-офтальмолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_13-e1655200913826.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Коцина Марія Степанівна</p>
+               <p class="subtitle_cart">лікар-педіатр, лікар з ультразвукової діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_23-e1655201728425.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Папст Ярослав Іванович</p>
+               <p class="subtitle_cart">лікар-ендоскопіст</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Голобин Ярослав Петрович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="10">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_26-e1655201985848.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Левко Петро Любомирович</p>
+               <p class="subtitle_cart">лікар-нейрохірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Піняк Мирослав Іванович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Андрухович Наталія Ігорівна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_53-e1655202456932.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Осідач Геннадій Миколайович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7436_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Приймич Лідія Михайлівна</p>
+               <p class="subtitle_cart">лікар-ендокринолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Воробець Ірина Йосифівна</p>
+               <p class="subtitle_cart">лікар з ультразвукової діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Юрків Ганна Іванівна</p>
+               <p class="subtitle_cart">лікар-лаборант</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Лесько Іван Миронович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="3">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гаврильців Олександра Михайлівна</p>
+               <p class="subtitle_cart">лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_11-e1655203136171.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Проценко Олексій Миколайович</p>
+               <p class="subtitle_cart">лікар-уролог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Сакаль Дмитро Миколайович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_51-e1655201179295.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Саковець Оксана Романівна</p>
+               <p class="subtitle_cart">лікар-гастроентеролог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7385_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Вежбовський Євген Романович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="14">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_16.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Дребот Микола Миколайович</p>
+               <p class="subtitle_cart">лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Ігнатов Олексій Іларіонович</p>
+               <p class="subtitle_cart">керівник, лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мачалаба Любомира Зіновіївна</p>
+               <p class="subtitle_cart">лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_03-e1655202658450.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мицько Мар'яна Степанівна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Пак Михайліна Йосафатівна</p>
+               <p class="subtitle_cart">лікар-лаборант з клінічної біохімії (ургентний)</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_14.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гальків Ростислав Степанович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="8">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_09.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Андрейців Мирослав Миронович</p>
+               <p class="subtitle_cart">лікар-нарколог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="1">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_50-e1655202062147.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Кравчук Інна Володимирівна</p>
+               <p class="subtitle_cart">лікар-трансфузіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Романчук Петро Миколайович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="3">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Каліцун Марта Мар'янівна</p>
+               <p class="subtitle_cart">лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Ватаг Василь Васильович</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="10">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_63-e1655201897273.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Кушина Петро Іванович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Король Галина Ярославівна</p>
+               <p class="subtitle_cart">лікар-стоматолог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Підперигора Вікторія Юріївна</p>
+               <p class="subtitle_cart">лікар з медицини невідкладних станів</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="12">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_59-e1655201412394.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Круць Оксана Петрівна</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_21-e1655203177766.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Приймич Ігор Михайлович</p>
+               <p class="subtitle_cart">завідувач стоматологічного відділення</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Юрків Борис Дмитрович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Діденко Роман Петрович</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="10">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Равлінко Ігор Ярославович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="7">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_32-e1655202863981.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мацьків Роксолана Іванівна</p>
+               <p class="subtitle_cart">лікар-отоларинголог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_10.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Короленко Лариса Едуардівна</p>
+               <p class="subtitle_cart">лікар з функціональної діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7418_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Яворська Олександра Яківна</p>
+               <p class="subtitle_cart">лікар-нарколог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Музичка Анна Володимирівна</p>
+               <p class="subtitle_cart">лікар-стоматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_34-e1655201312907.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Осередчук Петро Іванович</p>
+               <p class="subtitle_cart">лікар-стоматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_71-e1655201843310.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Сташкевич Ірина Орестівна</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_48-e1655203323239.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мишко Богдан Михайлович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар - уролог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_04-e1655201020963.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Кравець Олена Іванівна</p>
+               <p class="subtitle_cart">лікар-психіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_74.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Валовін Володимир Михайлович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="7">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_67-e1655202177985.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Самокішин Богдан Іванович</p>
+               <p class="subtitle_cart">завідувач дитячої консультації, лікар-невролог-психіатр дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="10">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_27-e1655203244884.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Попель Ростислав Романович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Риштій Роман Зіновійович</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_12.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Друшкевич Олександр Болеславович</p>
+               <p class="subtitle_cart">лікар з ультразвукової діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_39.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Бойко Ірина Миколаївна</p>
+               <p class="subtitle_cart">біолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_75-e1655203051526.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Оріхівський Андрій Ігорович</p>
+               <p class="subtitle_cart">старший лікар-рентгенолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7318_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мелешко Наталія Ярославівна</p>
+               <p class="subtitle_cart">лікар-інфекціоніст</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_42-e1655201072877.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Ярунів Юлія Вадимівна</p>
+               <p class="subtitle_cart">лікар-рентгенолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Теліга Алла Сидорівна</p>
+               <p class="subtitle_cart">лікар-дерматовенеролог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_56-e1655202562745.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Лесів Тетяна Іванівна</p>
+               <p class="subtitle_cart">лікар-лаборант з клінічної лабораторної діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_72.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Василишин Михайло Миколайович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-кардіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="8">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Сенета Надія Василівна</p>
+               <p class="subtitle_cart">завідувач відділення, лікар невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/img_7325-2_optimized-scaled.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Суслик Леся Богданівна</p>
+               <p class="subtitle_cart">лікар-кардіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гаращак Володимир Володимирович</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Роман Юлія Дмитрівна</p>
+               <p class="subtitle_cart">лікар-стоматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_54-e1655202510709.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Федів Назар Ігорович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Данилишин Христина Зіновіївна</p>
+               <p class="subtitle_cart">лікар-стоматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="4">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_33-e1655201450214.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Куцмида Роман Михайлович</p>
+               <p class="subtitle_cart">лікар-рентгенолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="9">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_02-e1655202762975.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Процак Дмитро Миронович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Дмитренко Ірина Ігорівна</p>
+               <p class="subtitle_cart">лікар з медицини невідкладних станів</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="12">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_29.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Ковальский Петро Петрович</p>
+               <p class="subtitle_cart">лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_65-e1655201603561.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Тарасович Тарас Миронович</p>
+               <p class="subtitle_cart">завідувач відділення, лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_17.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Башина Мирослава Іванівна</p>
+               <p class="subtitle_cart">лікар-стоматолог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Марущак Михайло Романович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Фрідріх Микола Степанович</p>
+               <p class="subtitle_cart">лікар-терапевт</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="6">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Костів Василь Георгійович</p>
+               <p class="subtitle_cart">лікар-стоматолог-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_68.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Білова Галина Робертівна</p>
+               <p class="subtitle_cart">завідувач КДЛ, лікар-лаборант</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Пізгор Надія Петрівна</p>
+               <p class="subtitle_cart">лікар з ультразвукової діагностики</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Магас Леся Степанівна</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Мацелко Андрій Богданович</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="7">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_52-e1655203100210.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Крута Ольга Вікторівна</p>
+               <p class="subtitle_cart">лікар-офтальмолог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="3">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_07-e1655202372529.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Николин Роман Іванович</p>
+               <p class="subtitle_cart">лікар-педіатр</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="12">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_24-e1655202280216.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Опришко Ольга Миколаївна</p>
+               <p class="subtitle_cart">лікар-кардіолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="17">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Яворський Петро Ярославович</p>
+               <p class="subtitle_cart">лікар-ортопед-травматолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_47-e1655202120143.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Олесюк Максим Ігорович</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_38.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Данилишин Іван-Орест Миколайович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="5">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_35-e1655201501791.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Опришко Галина Ігорівна</p>
+               <p class="subtitle_cart">лікар-лаборант</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_28-e1655137225976.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Столяр Олег Романович</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Опришко Марія-Олеся Юріївна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="7">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_31-e1655200791739.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Рибак Ростислав Ярославович</p>
+               <p class="subtitle_cart">лікар-хірург дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="7">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гультай Тетяна Панкратівна</p>
+               <p class="subtitle_cart">лікар-ендокринолог дитячий</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_05.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Гнидин Уляна Йосифівна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="13">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/no-photo.png" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Николишин Наталія Вячеславівна</p>
+               <p class="subtitle_cart">лікар-невропатолог</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="15">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_46.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Галецький Ігор Васильович</p>
+               <p class="subtitle_cart">лікар-хірург</p>
+            </div>
+         </a>
+      </div>
+
+      <div class="doctor_cart" data-type="16">
+         <a href="#">
+            <img src="/hospital/assets/img/doctor/doc_57-e1655201560718.jpg" alt="" class="doctor_cart_img">
+            <div class="table_in_cart">
+               <p class="title_cart">Лучків Богдана Дмитрівна</p>
+               <p class="subtitle_cart">лікар-анестезіолог</p>
+            </div>
+         </a>
+      </div>
+
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer" style="margin-top: 70px;">
+      <div class="container">
+         <img src="/hospital/assets/img/footer/logo_green.svg" alt="" class="logo_footer">
+         <a href="https://www.facebook.com/people/ВП-Лікарня-інтенсивного-лікування-КНП-ТМО-СМОЛ/100057353443150/"><img
+               src="/hospital/assets/img/footer/free-icon-facebook-220342.png" alt="" class="icon_facebook"></a>
+         <a href="https://t.me/strij_central_regional_hospital"><img
+               src="/hospital/assets/img/footer/free-icon-telegram-167642.png" alt="" class="icon_telegram"></a>
+         <a href="https://loda.gov.ua/structural-unit/17099?categoryId=9607"><img
+               src="/hospital/assets/img/footer/4.png" alt="" class="icon_spon_1"></a>
+         <a href="https://nszu.gov.ua/"><img src="/hospital/assets/img/footer/image-3.png" alt=""
+               class="icon_spon_2"></a>
+         <a href="https://stryi-rada.gov.ua/"><img src="/hospital/assets/img/footer/stryjska-miska-2-e1663927642228.jpg"
+               alt="" class="icon_spon_3"></a>
+         <a href="https://moz.gov.ua/"><img src="/hospital/assets/img/footer/moz.png" alt="" class="icon_spon_4"></a>
+         <a href="https://eliky.in.ua/"><img src="/hospital/assets/img/footer/image.png" alt="" class="icon_spon_5"></a>
+
+         <div class="lines"></div>
+
+         <p class="footer_title">© 2022 комунального некомерційного підприємства Стрийської міської ради Використання
+            матеріалів сайту дозволяється лише з посиланням на джерело</p>
+
+      </div>
+   </footer>
+
+   <script src="/hospital/script/doctor.js"></script>
+</body>
+
+</html>
